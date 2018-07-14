@@ -1,5 +1,5 @@
 # excelutil
-Writing 1 million rows excel in 1 minute.
+Writing 1 million rows excel in less 1 minute.
 ```sh
 mvn spring-boot:run
 ```
