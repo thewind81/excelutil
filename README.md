@@ -14,5 +14,7 @@ https://maven.apache.org/install.html
 # Progress
 ![img](progress.png)
 
+![img](happyniceday.png)
+
 # Console
 ![img](console.png)
