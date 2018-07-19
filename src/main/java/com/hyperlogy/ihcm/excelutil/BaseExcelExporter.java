@@ -11,6 +11,8 @@ import java.util.zip.ZipOutputStream;
 
 /**
  * @param <T>
+ * @author Hồ Hữu Trọng
+ * @since 17/07/2018
  */
 public abstract class BaseExcelExporter<T> {
     private static final Log logger = LogFactory.getLog(BaseExcelExporter.class);
@@ -21,15 +23,17 @@ public abstract class BaseExcelExporter<T> {
     protected long startTime;
     protected int currentRow;
 
+    /**
+     * Load template excel file (OOXML - zip) with headers
+     *
+     * @param templatePath
+     * @throws FileNotFoundException
+     */
     protected BaseExcelExporter(String templatePath) throws FileNotFoundException {
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         template = new FileInputStream(new File(classloader.getResource(templatePath).getFile()));
     }
 
-    /**
-     * @param outputStream
-     * @return
-     */
     protected String getXmlSheet1(OutputStream outputStream) throws IOException {
         ZipInputStream zis = new ZipInputStream(template);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();

@@ -8,6 +8,10 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * @author Hồ Hữu Trọng
+ * @since 17/07/2018
+ */
 public class TestExcelExporter extends BaseExcelExporter<Integer> {
     private static final Log logger = LogFactory.getLog(TestExcelExporter.class);
     private static final String NAME = "abcdefghijklmnopqrstuvwxyz";

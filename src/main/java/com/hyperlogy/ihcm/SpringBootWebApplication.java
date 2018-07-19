@@ -11,6 +11,10 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import java.io.FileNotFoundException;
 
+/**
+ * @author Hồ Hữu Trọng
+ * @since 17/07/2018
+ */
 @SpringBootApplication
 public class SpringBootWebApplication extends SpringBootServletInitializer {
     @Bean
