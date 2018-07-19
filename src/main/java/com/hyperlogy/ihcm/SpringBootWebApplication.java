@@ -1,6 +1,6 @@
 package com.hyperlogy.ihcm;
 
-import com.hyperlogy.ihcm.excelutil.SimpleExcelExporter;
+import com.hyperlogy.ihcm.excelutil.TestExcelExporter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -22,8 +22,8 @@ public class SpringBootWebApplication extends SpringBootServletInitializer {
     }
 
     @Bean
-    public SimpleExcelExporter excelExporter() throws FileNotFoundException {
-        return new SimpleExcelExporter("template.xlsx");
+    public TestExcelExporter testExcelExporter() throws FileNotFoundException {
+        return new TestExcelExporter("template.xlsx");
     }
 
     @Override
